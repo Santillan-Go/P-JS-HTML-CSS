@@ -1,0 +1,204 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+
+    --say-color:blue;
+}
+header{
+    text-align: center;
+    text-shadow: 5px 4px 5px blue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+body{
+   font-size: 16px;
+   font-family: sans-serif;
+   height: inherit;
+   overflow-x: hidden;
+
+}
+
+main{
+    height: 100%;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+ /*   grid-template-rows: repeat(auto-fit,minmax(250px,1fr));*/
+ 
+  width: 100%;
+  gap: 10px;
+  
+  
+  height: 100%;
+}
+
+
+.card{
+    border: 1px solid var(--say-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.card p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.delete{
+
+position: absolute;
+right: 2px;
+top: 0px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: white;
+/* box-shadow: 0 0  30px blue; */
+border: none;
+font-size: 20px;
+cursor: pointer;
+}
+
+
+
+.edit{
+    position: absolute;
+  bottom: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-shadow: 0 0  30px blue;
+    cursor: pointer;
+}
+
+
+.add{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: rgb(70, 70, 255);
+    border: none;
+    
+}
+
+.add:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px blue;
+    color: blue;
+}
+/* PANEL DE TAREAS */
+
+.panel{
+
+    border:  1px solid;
+    width: 500px;
+    height: 300px;
+   margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:3px solid var(--say-color);
+    position: relative;
+  transform: translate(0, -700%);
+  z-index: 400px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+
+  
+ }
+ .closePanel{
+    position: absolute;
+    bottom: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      box-shadow: 0 0  30px blue;
+      cursor: pointer;
+}
+
+form{
+    display: flex;
+gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+form .title{
+    width: 90%;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+.task{
+    margin: 10px;
+}
+.submit{
+    width: 200px;
+    height: 42px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+/* ABRIR PANEL DE AGREGAR TAREAS */
+.open{
+    position: absolute;
+    top:50px;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    transition: all 0.3s ease;
+}
+
+
+
+
+.color-body{
+    background-color: rgba(0,0, 0, 0.5)
+}
+
+.msg{
+    width: 300px;
+    height: 25px;
+    background-color: red;
+    font-size: 1rem;
+    color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   padding: 10px;
+   position: absolute;
+   top: 20px;
+   right: 10px;
+   transform: translate(500%,0);
+}
+
+.active-msg{
+    transform: translate(0,0);
+    transition: all 0.3s ease;
+}

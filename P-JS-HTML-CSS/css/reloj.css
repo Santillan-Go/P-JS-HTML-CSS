@@ -1,0 +1,56 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAxQMBIgACEQEDEQH/xAAbAAEBAQADAQEAAAAAAAAAAAACAQADBQYEB//EABkQAQEBAQEBAAAAAAAAAAAAAAABETFBIf/EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBgX/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAQIREv/aAAwDAQACEQMRAD8A/EYsRY6MoJYhRvlKwh9WN8ppRYkWNoRQoJRtlNKFBhRtlnThQYUbZTVhRIcbRFWFOpFjSIpRYkWNYkmZlEyWK1Km47FJEcHXnViLHjMvqkQk3ylYQwnRkqsIYTbKChQYUbZTVhQYUbRFOHAhRtlFKHAhxtEUosSLOtImlOrBJcSTIygrVmopCzMg3nViFOPGZfWqlBKN8opRR9WN8lShDDjfKFhQSjaJqwoMKNcppwoEONcoqwoMKNoinCgxfVyppMitJUlOKMbVdImFh0NeqLEbz7MrxcfVqwhhNs1NKLEhR0ZqKsIfVjfKThQYraFSWDCjXKDhQCjWVNKFBixpKimQQpWkqSXRZcpEso62q6RMLaOhdYdYujjolnUZ42PqFCgzitc0qRQYvrfNRShQIUdGammUGFG+amk0RWsqChSuMpVylTlIJSlaSpKUtBZVylYerKGrq+p4Wro62q6XC1NTU0dHFtYdVPT46VmZ5GPpK0Qpxeakovoq2zU04sGLHRmppw5XHOrG+amuT1Ri79bSpsJkVcqSl+FL8cZTi5S4cq6Grq5U8OVZQlXVzRcPW0dbT6OFqaOto9Di2sOsXo+OpVFeUjvZmZUpLDgzitM0qRQFjfNRTWCUb50mkso79VtNFw5V0NXVyp4SyjqtJS4WrKCyqmi4erKGtqpouHraOtp9Lha2jqaPR8K1h1i9DjrWZnmXarIphinBZUpGozits1NOKBRtnRHK2iraaSUvxRXWk0Rauhq6uaLhaujK2q9FwtXQ1dV6Lha2jrafocLW0NbR6HC1gtYvR8fGzM886WVGMKyKoMU4KqlSUUZxZWudFwpSBY2mk8JRVpNEUbRVc0XC1tFtV6Baujrar0OFraLaPQXW1NTR6HC1h1k+hx8zIr4zoZmYEzMxhWRVShinBZUpHqwFlaTSeFqjqytJouFraOq0mgWtosr0RMjH6CsjafocXU1NbU3Q4usOsn2fHCzM+c1VkYBWRQTMzGGVGOUKyKqUl1dFlzRHG0W1c0OFq6Osr0XC1tHW0/Q4Wto62j0OLrampqbocJB1U+jBmZyrZmYBmZjDMzAMrMCZmZUDa2sygsrazGTa2swDa2sx9obW1mHqhLW1mI0ZmIP/2Q==");
+    background-size: cover;
+}
+
+
+.reloj{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+
+}
+
+
+.title-date{
+    font-size: 3rem;
+    border-bottom: 4px solid white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.date{
+    font-size: 2rem;
+    margin: 1rem;
+    
+}
+
+
+.Time{
+    font-size: 3rem;
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+  
+    text-shadow: 10px 10px 19px blue;
+}
